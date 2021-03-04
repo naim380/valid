@@ -23,6 +23,7 @@
                 <th scope="col">car</th>
                 <th scope="col"></th>
                 <th scope="col"></th>
+                <th scope="col"></th>
             </tr>
             </thead>
             <tbody>
@@ -37,6 +38,10 @@
                             {{ csrf_field() }}
                             <button class="self-btn btn btn-lc w-100" type="submit">Supprimer</button>
                         </form>
+                    </td>
+                    <td>
+                        {{$car->vendeur-> firstname}}
+                        {{$car->vendeur-> lastname}}
                     </td>
                 </tr>
             @endforeach
